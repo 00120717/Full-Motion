@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
+*{
+    margin: 0;
+}
+html , body{
+    background-color: black;
+}
+header{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header{
+    height: 500px;
+    width: 100%;
+    background-image: url("public/img/banner.jpg");
+    color: white;
+    
+}
+
+header > h1{
+    font-size: 4em;
+    font-family: 'Passion One', cursive;
+}
+header > p{
+    color: rgb(209, 196, 196);
+    font-size: 1.5em;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 35px;
+    font-weight: 100;
+}
+
+.down{
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 12px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(450px, 1fr));
+    padding: 5%;
+    background-color: #1d2122;
+    grid-gap: 1.5em;
+    
+}
+
+.item{
+    display: flex;
+    border-radius: 2%;
+    flex-direction: column;
+    color: white;
+    background-color: #2c2c32;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+    overflow: hidden;
+
+}
+
+.item > img{
+    width: 100%;
+    height: 50%;
+}
+
+.item > h3{
+    font-size: 1.2em;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.item > p{
+    color: rgb(146, 143, 143);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.9em;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    
+}
+
+footer ul li{
+    color: grey;
+    display: inline-block;
+    padding: 8px;
+}
+footer > h3{
+    font-size: 1.2em;
+    font-family: "Source Sans Pro", sans-serif;
+}
+footer  p{
+    color: rgb(146, 143, 143);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.9em;
+}
+footer .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    background-color: none;
+    border:1px solid grey;
+    border-radius: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: underline dotted;
+    color:rgb(209, 196, 196);;
+}
+
+.btn{
+    padding: 1em;
+    width: 100%;
+    height: 40px; 
+    text-align: center;
+    
+}
+.btn input#watch1 , input#watch2,input#watch3,input#watch4,input#watch5,input#watch6{
+    width: 80%;
+    height: 100%;
+    border: 0;
+    border-radius: 3px;
+    margin: 0;
+    color: white;
+    
+    
+}
+.btn input#watch1 , input#watch4{
+    background-color: #82cec6;
+}
+.btn input#watch2 , input#watch5{
+    background-color: #7f92cf
+}
+.btn input#watch3 , input#watch6{
+    background-color: #a55ca5
+}
+.item > h3,p{
+    padding: 0.5em;
+    text-align: center;
+}
