@@ -7,45 +7,66 @@ html , body{
 }
 header{
     display: flex;
-    flex-direction:column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    text-align: center;
     
 }
 header{
-    height: 500px;
+    height: 75vh;
+    min-height: 75vh;
     width: 100%;
-    background-image: url("public/img/banner.jpg");
+    background-image:none;
     color: white;
     
 }
 
-header > h1{
+header  h1{
     font-size: 4em;
     font-family: 'Passion One', cursive;
 }
-header > p{
+header  p{
     color: rgb(209, 196, 196);
     font-size: 1.5em;
     font-family: "Source Sans Pro", sans-serif;
     line-height: 35px;
     font-weight: 100;
 }
+.vid{
+    position: absolute;
+    width: 100%;
+
+}
+
+.text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction:column;
+
+}
 
 .down{
+    display: flex;
     border: 1px solid white;
     border-radius: 100%;
-    padding: 12px;
+    width: 4em;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     padding: 5%;
     background-color: #1d2122;
     grid-gap: 1.5em;
-    
+    padding-top: 7em;
 }
 
 .item{
@@ -83,6 +104,10 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding: 1em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75vh;
     
 }
 
@@ -90,6 +115,9 @@ footer ul li{
     color: grey;
     display: inline-block;
     padding: 8px;
+}
+footer ul li div i:hover{
+    color: whitesmoke;
 }
 footer > h3{
     font-size: 1.2em;
@@ -144,6 +172,18 @@ a{
 .btn input#watch3 , input#watch6{
     background-color: #a55ca5
 }
+
+.btn input#watch1:hover , input#watch4:hover{
+    background-color: #9ce7e0;
+}
+.btn input#watch2:hover , input#watch5:hover{
+    background-color: #9fafe6
+}
+.btn input#watch3:hover , input#watch6:hover{
+    background-color: #c77fc7
+}
+
+
 .item > h3,p{
     padding: 0.5em;
     text-align: center;
